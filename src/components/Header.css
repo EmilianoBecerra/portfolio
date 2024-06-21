@@ -1,0 +1,50 @@
+.Header {
+    width: 100%;
+    height: auto;
+    display: flex;
+
+}
+
+.Header .headerLeft {
+    width: 50%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: start ;
+    align-items: center;
+    color: white;
+}
+
+.Header .headerLeft img{
+    margin: 10px;
+    width: 66px;
+    height: 66px;
+    border: 3px solid #025E73;
+    border-radius: 50px;
+}
+
+.Header .headerRigth {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.Header .headerRigth .btn-header {
+    margin: 5px;
+    width: 133px;
+    height: 33px;
+    background-color: inherit;
+    color: white;
+    border: none;
+    font-size: 1.3rem;
+    border-bottom: 2px solid #025E73;
+}
+
+.Header .headerRigth .btn-header:hover {
+    color: #025E73;
+    cursor: pointer;
+}
+
+
+

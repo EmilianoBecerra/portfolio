@@ -1,0 +1,8 @@
+.Presentation {
+    height: 100%;
+    margin: 10px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
