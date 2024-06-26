@@ -1,8 +1,70 @@
 .Presentation {
-    height: 100%;
-    margin: 10px;
+    width: 95%;
+    height: 90%;
+    margin-top: 10px;
+    color: white;
+    padding-left: 123px;
+    /* border: 1px solid red; */
+}
+
+.Presentation .welcome {
     display: flex;
     flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
+    align-items: start;
+    margin-top: 80px;
 }
+
+.Presentation .welcome h2 {
+    color: white;
+    font-size: 38px;
+}
+
+.Presentation .welcome .nametitle {
+    color: #00bc94;
+    font-size: 53px;
+}
+
+.Presentation .info {
+    margin-top: 38px;
+}
+
+.info .info-img {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.info .info-img .img-svg {
+    position: absolute;
+    top: 90px;
+    right: 300px;
+    width: 500px;
+    height: 500px;
+}
+
+.Presentation .info ul {
+    margin: 30px;
+}
+
+.Presentation .info ul li {
+    list-style-type: "\2728  ";
+    font-size: 18px;
+}
+
+
+.Presentation .info .images-list {
+    display: flex;
+}
+
+.Presentation .info .images-list li {
+    list-style-type: none;
+    margin: 15px;
+}
+
+.Presentation .info .images-list li img {
+    border-radius: 8px;
+    width: 200px;
+    height: 180px;
+    box-shadow: 3px 3px 10px black;
+    cursor: pointer;
+}
+
