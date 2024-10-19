@@ -1,9 +1,7 @@
 import { Dispatch, SetStateAction } from "react";
 import { Presentation } from "./Presentation";
-import { Learning } from "./Learning";
-import { Language } from "./Language";
+import { Knowledge } from "./Knowledge";
 import { Contact } from "./Contact";
-
 import "./Main.css";
 
 type Props = {
@@ -16,8 +14,7 @@ export function Main(props: Props) {
   return (
     <div className="Main">
       {view === "Presentation" ? <Presentation /> : null}
-      {view === "Learning" ? <Learning /> : null}
-      {view === "Language" ? <Language /> : null}
+      {view === "Knowledge" ? <Knowledge /> : null}
       {view === "Contact" ? <Contact /> : null}
     </div>
   );

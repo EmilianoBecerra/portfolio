@@ -11,8 +11,7 @@ export function Header(props: Props) {
 
   const button = [
     { label: "Presentacion", function: () => setView("Presentation") },
-    { label: "Aprendizaje", function: () => setView("Learning") },
-    { label: "Lenguaje", function: () => setView("Language") },
+    { label: "Conocimientos", function: () => setView("Knowledge") },
     {
       label: "Contacto",
       function: () => {

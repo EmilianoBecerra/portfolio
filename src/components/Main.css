@@ -1,8 +1,8 @@
 .Main {
+    width: 1800px;
+    height: 700px;
     display: flex;
     justify-content: center;
-    width: 85%;
-    height: 75%;
     background-color: #21272f;
     border-radius: 18px;
 }

@@ -1,10 +1,78 @@
 import "./Presentation.css";
 import project1 from "../img/mi-proyecto-1.jpg";
-import project2 from "../img/mi-proyecto-2.png";
+import project2 from "../img/mi-proyecto-2.jpg";
 import project3 from "../img/mi-proyecto-3.jpg";
-import project4 from "../img/mi-proyecto-4.jpg";
+import project4 from "../img/proyectoMusica.jpg";
+import project5 from "../img/proyectoClima.jpg";
+import project6 from "../img/passGenerator.jpg";
+import project7 from "../img/todoList.jpg";
 import imgBackground from "../img/img-fondo.png";
 
+const projects = [
+  {
+    id: 0,
+    link: "https://herborio.netlify.app/",
+    image: {
+      title: "Herborio landing page HTML",
+      url: project1,
+      alt: "Imagen primer proyecto hecho con HTML y CSS",
+    },
+  },
+  {
+    id: 1,
+    link: "https://emilianobecerra.github.io/Tarea8_EducacionIT/",
+    image: {
+      title: "Inscripción GYM JavaScript",
+      url: project2,
+      alt: "Imagen segundo proyecto hecho con HTML, CSS y JavaScript",
+    },
+  },
+  {
+    id: 2,
+    link: "https://github.com/EmilianoBecerra/To-Do-List-CLI-Node",
+    image: {
+      title: "To-do list Cli NodeJS",
+      url: project3,
+      alt: "Imagen tercer proyecto hecho con Node.js",
+    },
+  },
+  {
+    id: 3,
+    link: "https://emilianobecerra.github.io/MusicPlayerApp",
+    image: {
+      title: "Musica Player app JavaScript",
+      url: project4,
+      alt: "Imagen cuarto proyecto hecho con JavaScript",
+    },
+  },
+  {
+    id: 4,
+    link: "https://emilianobecerra.github.io/WeatherApp/",
+    image: {
+      title: "Wather app JavaScript",
+      url: project5,
+      alt: "Imagen quinto proyecto hecho con JavaScript",
+    },
+  },
+  {
+    id: 5,
+    link: "https://emilianobecerra.github.io/PassGeneratorApp/",
+    image: {
+      title: "Pass Generator app JavaScript",
+      url: project6,
+      alt: "Imagen sexto proyecto hecho con JavaScript",
+    },
+  },
+  {
+    id: 6,
+    link: "https://emilianobecerra.github.io/to-do-List-App/",
+    image: {
+      title: "To-do list JavaScript",
+      url: project7,
+      alt: "Imagen septimo proyecto hecho con JavaScript",
+    },
+  },
+];
 export function Presentation() {
   return (
     <div className="Presentation">
@@ -31,53 +99,21 @@ export function Presentation() {
         </section>
         <section className="info-img-project">
           <ul className="images-list">
-            <li>
-              <img
-                title={"Primer Proyecto"}
-                src={project1}
-                alt={"Imagen primer proyecto hecho con HTML y CSS"}
-                onClick={() => {
-                  console.log("click imagen");
-                }}
-              />
-            </li>
-            <li>
-              <img
-                title={"Segundo Proyecto"}
-                src={project2}
-                alt={"Imagen segundo proyecto hecho con HTML, CSS y JavaScript"}
-                onClick={() => {
-                  console.log("click imagen");
-                }}
-              />
-            </li>
-            <li>
-              <img
-                title={"Tercer Proyecto"}
-                src={project3}
-                alt={
-                  "Imagen tercer proyecto hecho con HTML,CSS,JavaScript, NodeJS, Base de datos"
-                }
-                onClick={() => {
-                  console.log("click imagen");
-                }}
-              />
-            </li>
-            <li>
-              <img
-                title={"Cuarto Proyecto"}
-                src={project4}
-                alt={"Imagen cuarto proyecto hecho con React"}
-                onClick={() => {
-                  console.log("click imagen");
-                }}
-              />
-            </li>
+            {projects.map((project) => (
+              <li key={project.link}>
+                <a href={project.link} target="_blank" rel="noreferrer">
+                  <img
+                    title={project.image.title}
+                    src={project.image.url}
+                    alt={project.image.alt}
+                  />
+                </a>
+              </li>
+            ))}
           </ul>
         </section>
-
-        <footer></footer>
       </main>
+      <footer className="footer">Desarrollado por Emiliano Becerra</footer>
     </div>
   );
 }
