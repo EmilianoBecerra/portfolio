@@ -1,5 +1,6 @@
 import "./Header.css";
 import { Dispatch, SetStateAction } from "react";
+import iconNavBar from "../img/navBar.png";
 
 type Props = {
   view: string;
@@ -21,15 +22,23 @@ export function Header(props: Props) {
   ];
 
   return (
-    <div className="Header">
+    <div className="Header-header">
       <h1>Portfolio</h1>
-      <nav className="nav">
-        {button.map((element, index) => (
-          <button key={index} onClick={element.function} className="btn-header">
-            {element.label}
-          </button>
-        ))}
-      </nav>
+      <div className="dropdown">
+        <input type="checkbox" className="check" />
+        <img src={iconNavBar} alt="icon navbar" />
+        <nav className="nav">
+          {button.map((element, index) => (
+            <button
+              key={index}
+              onClick={element.function}
+              className="btn-header"
+            >
+              {element.label}
+            </button>
+          ))}
+        </nav>
+      </div>
     </div>
   );
 }

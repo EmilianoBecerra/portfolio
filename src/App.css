@@ -1,17 +1,29 @@
-* {
+*{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   font-family: "Roboto Condensed", sans-serif;
+  background-color: black;
 }
 
-.App {
-  height: 100vh;
-  width: 100vw;
-  background-repeat: repeat;
-  background-size: cover;
-  background-image: url(img/fondo-de-pantalla.jpg);
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
+
+
+@media only screen and (min-width:900px){
+  *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Condensed", sans-serif;
+    background-color: transparent;
+  }
+  .App {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-repeat: repeat;
+    background-size: cover;
+    background-image: url(img/fondo-de-pantalla.jpg);
+  }
 }

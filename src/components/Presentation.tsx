@@ -1,23 +1,19 @@
 import "./Presentation.css";
-import project1 from "../img/mi-proyecto-1.jpg";
 import project2 from "../img/mi-proyecto-2.jpg";
-import project3 from "../img/mi-proyecto-3.jpg";
-import project4 from "../img/proyectoMusica.jpg";
+import project3 from "../img/To-DoList.png";
+import project4 from "../img/music-player.png";
 import project5 from "../img/proyectoClima.jpg";
-import project6 from "../img/passGenerator.jpg";
+import project6 from "../img/password.png";
 import project7 from "../img/todoList.jpg";
 import imgBackground from "../img/img-fondo.png";
+import htmlIcon from "../img/html-5.png";
+import cssIcon from "../img/css-3.png";
+import JSIcon from "../img/js.png";
+import reactIcon from "../img/react-original-wordmark.svg";
+import TSIcon from "../img/ts.png";
+import sassIcon from "../img/sass.png";
 
 const projects = [
-  {
-    id: 0,
-    link: "https://herborio.netlify.app/",
-    image: {
-      title: "Herborio landing page HTML",
-      url: project1,
-      alt: "Imagen primer proyecto hecho con HTML y CSS",
-    },
-  },
   {
     id: 1,
     link: "https://emilianobecerra.github.io/Tarea8_EducacionIT/",
@@ -79,23 +75,21 @@ export function Presentation() {
       <header className="welcome">
         <h2>Hola, soy</h2>
         <h2 className="nametitle">Emiliano</h2>
-        <h2>Desarrollador Full Stack.</h2>
+        <h2>Desarrollador Front End.</h2>
       </header>
       <main className="info">
-        <section className="info-img">
+        <img className="img-svg" src={imgBackground} alt="" />
+        <section className="personal-info">
           <ul>
             <li>Estudiante interesado por la tecnología.</li>
-            <li>
-              Me considero una persona sociable y con gran capacidad para
+            <li>Me considero una persona sociable y con gran capacidad para
               trabajar en equipo.
             </li>
-            <li> Disfruto de los debates y el intercambio de ideas.</li>
-            <li>
-              Considero que el aprendizaje continuo es esencial para mantener
+            <li>Disfruto de los debates y el intercambio de ideas.</li>
+            <li>Considero que el aprendizaje continuo es esencial para mantener
               una mente activa.
             </li>
           </ul>
-          <img className="img-svg" src={imgBackground} alt="" />
         </section>
         <section className="info-img-project">
           <ul className="images-list">
@@ -112,8 +106,32 @@ export function Presentation() {
             ))}
           </ul>
         </section>
+        <section className="box-icon-list">
+          <ul className="icon-list">
+            <li>
+              <img src={htmlIcon} alt="HTML icon" />
+            </li>
+            <li>
+              <img src={cssIcon} alt="CSS icon" />
+            </li>
+            <li>
+              <img src={sassIcon} alt="Sass icon" />
+            </li>
+            <li>
+              <img src={JSIcon} alt="JavaScript icon" />
+            </li>
+            <li>
+              <img src={TSIcon} alt="TypeScript icon" />
+            </li>
+            <li>
+              <img src={reactIcon} alt="React icon" />
+            </li>
+          </ul>
+        </section>
       </main>
-      <footer className="footer">Desarrollado por Emiliano Becerra</footer>
+      <footer className="presentation-footer">
+        Desarrollado por Emiliano Becerra
+      </footer>
     </div>
   );
 }

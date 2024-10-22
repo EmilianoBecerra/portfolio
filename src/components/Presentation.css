@@ -1,87 +1,166 @@
 .Presentation {
-    width: 95%;
-    height: 90%;
-    margin-top: 10px;
-    color: white;
-    padding-left: 123px;
-}
-
-.Presentation .welcome {
     display: flex;
     flex-flow: column nowrap;
+    justify-content: center;
     align-items: start;
-    margin-top: 80px;
+    margin-top: 30px;
+    padding: 10px;
 }
 
-.Presentation .welcome h2 {
-    color: white;
-    font-size: 38px;
+.Presentation .welcome{
+    font-size: 20px;
 }
 
 .Presentation .welcome .nametitle {
     color: #00bc94;
-    font-size: 53px;
 }
 
-.Presentation .info {
-    margin-top: 38px;
-}
-
-.info .info-img {
-    display: flex;
-    flex-flow: row nowrap;
-}
-
-.info .info-img .img-svg {
-    position: absolute;
-    top: 90px;
-    right: 300px;
-    width: 500px;
-    height: 500px;
-}
-
-.info-img-project {
-    margin: 0px;
-    padding: 0px;
+.info .img-svg {
+    display: none;
 }
 
 .Presentation .info ul {
-    margin: 14px;
+    list-style-type: ">";
+    margin-left: 20px;
+    margin-top: 10px;
 }
 
-.Presentation .info ul li {
-    list-style-type: "\2728";
-    font-size: 18px;
+.personal-info{
+    margin-top: 20px;
 }
 
-.Presentation .info .images-list{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 30px;
+.box-icon-list{
+    margin-top: 30px ;
 }
 
-.Presentation .info .images-list li {
+.icon-list{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr;
+    row-gap: 50px;
+}
+
+.icon-list li{
     list-style-type: none;
-    margin: 15px;
-    padding: 10px;
+}
+
+.icon-list li img{
+    border-radius: 5px;
+    padding: 5px;
+    width: 60px;
+}
+
+.info-img-project{
+    display: none;
 }
 
 .Presentation .info .images-list li img {
-    border-radius: 8px;
-    width: 150px;
-    height: 150px;
-    box-shadow: 3px 3px 10px black;
-    cursor: pointer;
-    transition-duration: 300ms;
+    display: none;
 }
 
-.Presentation .info .images-list li img:hover {
-    width: 160px;
-    height: 160px;
-    box-shadow: 0px 0px 30px rgb(70, 122, 70);
+.presentation-footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
 }
 
-.footer{
-   text-align: center;
+
+@media screen and (min-width:830px) {}
+
+
+
+@media screen and (min-width:1440px) {
+    .Presentation {
+        width: 95%;
+        height: 90%;
+        margin-top: 10px;
+        color: white;
+        padding-left: 123px;
+    }
+
+    .Presentation .welcome {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: start;
+        margin-top: 80px;
+    }
+
+    .Presentation .welcome h2 {
+        color: white;
+        font-size: 38px;
+    }
+
+    .Presentation .welcome .nametitle {
+        color: #00bc94;
+        font-size: 53px;
+    }
+
+    .Presentation .info {
+        margin-top: 38px;
+    }
+
+    .info .info-img {
+        display: flex;
+        flex-flow: row nowrap;
+    }
+
+    .info .img-svg {
+        display: flex;
+        position: absolute;
+        top: 90px;
+        right: 300px;
+        width: 500px;
+        height: 500px;
+    }
+
+    .info-img-project {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .Presentation .info ul {
+        margin: 14px;
+    }
+
+    .Presentation .info ul li {
+        list-style-type: "\2728";
+        font-size: 18px;
+    }
+
+    .Presentation .info .images-list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 166px;
+    }
+
+    .Presentation .info .images-list li {
+
+        list-style-type: none;
+        margin: 15px;
+        padding: 10px;
+    }
+
+    .Presentation .info .images-list li img {
+        display: flex;
+        border-radius: 8px;
+        width: 150px;
+        height: 150px;
+        box-shadow: 3px 3px 10px black;
+        cursor: pointer;
+        transition-duration: 400ms;
+    }
+
+    .Presentation .info .images-list li img:hover {
+        width: 160px;
+        height: 160px;
+        box-shadow: 0px 0px 10px #5be3ab
+    }
+
+    .footer {
+        margin-top: 50px;
+        text-align: center;
+    }
 }

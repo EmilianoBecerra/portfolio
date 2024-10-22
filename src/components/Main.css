@@ -1,8 +1,17 @@
+
 .Main {
-    width: 1800px;
-    height: 700px;
-    display: flex;
-    justify-content: center;
-    background-color: #21272f;
-    border-radius: 18px;
+    background-color: #000000;
+    color: white;
+}
+
+
+@media only screen and (min-width:900px) {
+    .Main {
+        width: 1800px;
+        height: 700px;
+        display: flex;
+        justify-content: center;
+        border-radius: 18px;
+    }
+
 }
